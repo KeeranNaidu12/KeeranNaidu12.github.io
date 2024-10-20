@@ -10,7 +10,9 @@
 
 body{
     min-height: 200vh;
+    max-width: 900px;
     background-color: #ffefa7;
+    overflow-x: hidden;
 }
 
 .head{
@@ -37,11 +39,7 @@ body{
 
 .nav {
     justify-content: space-between;
-    overflow: hidden;
-    @media(max-width:$laptop){
-        display: block;
-
-    }
+    overflow: hidden; 
 }
 
 .nav a{
@@ -79,16 +77,14 @@ body{
     text-decoration: none;
 }
 
-.navside a.active{
-    background-color: #ff4848;
-    color: white;
-}
-
 .navside a:hover:not(.active){
     background-color: #ffe570;
     color:white;
 }
 
+@media only screen and (max-width: 600px){
+    
+    }
 
 /*-------------------------------------------- About ----------------------------------------------------*/
 @media only screen and (min-width: 1200px){
@@ -123,7 +119,8 @@ body{
 /* Phone Layout */
 @media only screen and (max-width: 600px){
     .about {
-        height: 1000px;
+        height: 500px;
+        width:400px;
         background-color: #ffefa7;
     }
     
@@ -135,9 +132,9 @@ body{
     }
     
     .atext p{
-        font-size: 25px;
-        padding: 30px;
-
+        font-size: 20px;
+        margin-left: 50px;
+        margin-right: 100px;
     }
     
     .atext img{
@@ -146,6 +143,8 @@ body{
         height: 275px;
         margin-top: 30px;
         margin-left: 50px;
+        margin-bottom: 30px;
+
     }
     }
 /*-------------------------------------------- Projects ----------------------------------------------------*/
@@ -180,6 +179,37 @@ body{
     margin-left: 100px;
     max-width: 400px;
 }
+
+/* Phone Layout */
+@media (max-width: 600px){
+    .projects {
+        height: 500px;
+        background-color: #ffe46a;
+    }
+    
+    .atext h3{
+        padding-top: 40px;
+        font-size: 25px;
+        margin-top: 200px; 
+        margin-left: 50px;
+    }
+    
+    .atext p{
+        font-size: 20px;
+        margin-left: 50px;
+        margin-right: 100px;
+    }
+    
+    .atext img{
+        display:block;
+        width: 200px; 
+        height: 275px;
+        margin-top: 30px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+
+    }
+    }
 
 /*-------------------------------------------- Contacts ----------------------------------------------------*/
 
