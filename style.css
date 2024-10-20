@@ -9,25 +9,11 @@
 }
 
 body{
-    min-height: 200vh;
     max-width: 900px;
-    background-color: #ffefa7;
+    background-color: #aae0ff;
     overflow-x: hidden;
 }
 
-.head{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10%;
-    padding: 20px 100px;
-    background: linear-gradient(#ffe570 10%, #ffb048 100%, #fca15b 20%);
-    display: flex;
-    justify-content: space-between;
-
-    z-index: 100;
-}
 
 .logo img{
     position:relative;
@@ -53,13 +39,10 @@ body{
 
 
 .navside{
-    margin-top: -20px;
-    margin-right:-100px;
-    padding:0;
+    position: fixed;
     width:200px;
-    background-color: #ffa865;
-    position:relative;
-    height:1000px;
+    background-color: #5ea9ff;
+    height:900px;
     overflow:auto;
     }
 
@@ -83,7 +66,30 @@ body{
 }
 
 @media only screen and (max-width: 600px){
-    
+    .nav{
+        display:none;
+    }
+
+    .navside{
+        width:150px;
+        background-color: #39cdfe;
+        position:fixed;
+        height:100vh;
+        right: 0;
+        top:0;
+        }
+
+        .sidelogo{
+            display:block;
+            margin-right: 20%;
+            overflow-x: hidden;
+        }
+     
+        .sidelogo > img{
+            display:block;
+            width: 95%;
+            
+        }
     }
 
 /*-------------------------------------------- About ----------------------------------------------------*/
@@ -93,10 +99,17 @@ body{
     background-color: #ffefa7;
 }
 
-.atext h3{
-    font-size: 50px;
-    margin-top: 200px; 
-    margin-left: 100px;
+.about h3{
+    margin-top: 50px; 
+    border:#00c8ff solid;
+    border-width: 10px;
+    background-color: #50e8ff;
+    display:block;
+    position: relative;
+    width: 25%;
+    text-align: center;
+    margin-left: 125px;
+    text-size-adjust: 10%;
 }
 
 .atext p{
@@ -118,97 +131,74 @@ body{
 
 /* Phone Layout */
 @media only screen and (max-width: 600px){
-    .about {
-        height: 500px;
+    .about {      
+        height: 600px;
         width:400px;
-        background-color: #ffefa7;
+        background-color: #aae0ff;
     }
     
-    .atext h3{
-        padding-top: 40px;
-        font-size: 25px;
-        margin-top: 200px; 
-        margin-left: 50px;
-    }
-    
-    .atext p{
-        font-size: 20px;
-        margin-left: 50px;
-        margin-right: 100px;
-    }
-    
-    .atext img{
+    .atext > h3{
+        margin-top: 120px;
+        border:#00c8ff solid;
+        border-width: 10px;
+        background-color: #50e8ff;
         display:block;
+        position: relative;
+        width: 25%;
+        text-align: center;
+        margin-left: 125px;
+    }
+    
+    .about p{
+        border:#00c8ff solid;
+        border-width: 10px;
+        position: relative;
+        background-color: #50e8ff;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 60px;
+        margin-right: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .atext > img{
+        border:#00c8ff solid;
+        border-width: 10px;
+        display:inline;
+        position: relative;
         width: 200px; 
         height: 275px;
         margin-top: 30px;
-        margin-left: 50px;
+        margin-left: 80px;
         margin-bottom: 30px;
 
     }
     }
 /*-------------------------------------------- Projects ----------------------------------------------------*/
 
-.projects {
-    height: 1200px;
-    background-color: #ffe46a;
-}
-
-.ptext h3{
-    font-size: 50px;
-    margin-top: 200px; 
-    margin-left: 100px;
-}
-
-.passgen p{
-    font-size: 25px;
-    margin-left: 100px;
-    max-width: 400px;
-}
-
-
-.website p{
-    font-size: 25px;
-    max-width: 400px;
-    margin-top: 30px;
-    margin-left: 600px;
-}
-
-.ai p{
-    font-size: 25px;
-    margin-left: 100px;
-    max-width: 400px;
-}
-
 /* Phone Layout */
 @media (max-width: 600px){
-    .projects {
-        height: 500px;
-        background-color: #ffe46a;
-    }
-    
-    .atext h3{
-        padding-top: 40px;
-        font-size: 25px;
-        margin-top: 200px; 
-        margin-left: 50px;
-    }
-    
-    .atext p{
-        font-size: 20px;
-        margin-left: 50px;
-        margin-right: 100px;
-    }
-    
-    .atext img{
-        display:block;
-        width: 200px; 
-        height: 275px;
-        margin-top: 30px;
-        margin-left: 50px;
-        margin-bottom: 30px;
 
+    .projects {
+        margin-top: 150px;
+        height: 800px;
+        background-color: #2282ff;
     }
+
+    .ptext h3{
+        margin-top: 150px;
+        border:#00c8ff solid;
+        border-width: 10px;
+        background-color: #50e8ff;
+        display:block;
+        width: 25%;
+        text-align: center;
+        margin-left: 125px;
+    }
+    
     }
 
 /*-------------------------------------------- Contacts ----------------------------------------------------*/
